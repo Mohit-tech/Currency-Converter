@@ -1,0 +1,255 @@
+html,
+body{
+   margin: auto;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: darkslategrey;
+}
+.container{
+   width: 100%;
+   height: 100%;
+
+}
+.row{
+   width: 96%;
+   height: 100%;
+   margin: 0;
+}
+nav{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: end;
+   -ms-flex-pack:end ;
+   justify-content:flex-end;
+}
+#menu{
+   width: 100%;
+   padding-left: 0;
+   display:-webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   list-style-type: none;
+   -webkit-box-pack: end;
+   -ms-flex-pack:column;
+   justify-content: flex-end;
+
+}
+.menu:hover .hidden{
+   display: block;
+}
+.menu:item{
+   padding: 10px;
+   margin-bottom: 1px;
+   background-color: brown;
+}
+.menu:item:hover{
+   background-color: blanchedalmond;
+}
+.hidden{
+   display: none;
+}
+a{
+   color: aquamarine;
+   font-weight: bold;
+   transform: none;
+
+}
+.icon{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: end;
+   justify-content: flex-end;
+}
+.icon i{
+   color: #1E90FF;
+   font-size: 20px;
+   padding: 0 10px;
+}
+.column{
+   width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack:center;
+   justify-content: center;
+}
+form{
+   width: 100%;
+   max-width: 425px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align:center;
+   align-items: center;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column; 
+}
+label{
+   width: 100%;
+   -ms-flex-item-align:start;
+   align-self: flex-start;
+   font-weight: bold;
+}
+select,
+input[type="text"]{
+   display: block;
+   width: 100%;
+   padding: 10px;
+   color: darkorange;
+max-width: 425px;
+font-weight: bold;
+border-radius: 4px;
+margin-bottom: 15px;
+border: 1px solid #333999;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background-color:#333456;
+}
+.btn{
+   border: 0;
+   width: 25%;
+   display: block;
+   margin: auto;
+   color: #FFFFFF;
+   cursor: pointer;
+   margin-bottom: ;
+   max-width: 425px;
+   font-size: 1.1rem;
+   font-weight: bold;
+   border-radius: 4px;
+   letter-spacing: 2.2px;
+   background-color: #333999;
+
+}
+.btn:hover{
+   background-color: #4650f7;
+
+}
+.banner{
+   color: #1E90FF;
+   font-size: 2rem;
+   text-align: center;
+
+}
+.amount{
+   color: #1E90FF;
+   font-size: 2rem;
+   text-align: center;
+}
+#js{
+   font-size: 3rem;
+   margin-bottom: 0;
+}
+#currency{
+   font-size: 2.4rem;
+}
+#country-codr{
+   font-size: 1.5rem;
+}
+.hold{
+   margin: auto;
+}
+table{
+   width: 100%;
+   color: #1E90FF;
+   max-width: 650px;
+   border-spacing: 0;
+   margin: 0 auto 25px auto;
+}
+th{
+   font-size: 1.1rem;
+}
+th,
+td{
+   padding: 25px 15px;
+   text-align: center;
+   border-bottom: 1px solid #333999;
+
+}
+@media only screen and(min-width:445px){
+   #menu{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient:horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row; 
+   }
+   .hidden{
+      display: block;
+   }
+   .menu:item{
+      margin-right: 1px;
+   }
+}
+@media only screen and(min-width:576px) {
+   .row{
+      width: 75%;
+   }
+   #dollar-amount{
+      font-size: 5rem;
+   }
+   .banner{
+      font-size: 3rem;
+   }
+   th,td{
+      padding: 25px 25px;
+   }
+}
+@media only screen and(min-width:776px){
+   #menu{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient:horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row; 
+   }
+   .hidden{
+      display: block;
+   }
+   .menu:item{
+      margin: 1px;
+   }
+   #dollar-amount{
+      font-size: 6rem;
+   }
+   .banner{
+      font-size: 4rem;
+   }
+}
+@media only screen and(min-width:992px){
+   .banner{
+      font-size: 6rem;
+   }
+   .column{
+      max-width: 1300px;
+   }
+   form{
+      max-width: unset;
+      min-width: 1300px;
+      -webkit-box-orient:horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row; 
+   flex-direction: row; 
+   }
+   label:nth-child(2),label:nth-child(3){
+      margin-left: 1rem;
+   }
+}
+
+

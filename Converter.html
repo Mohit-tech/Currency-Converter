@@ -1,0 +1,104 @@
+
+<noscript>
+
+   <div style="
+   width:100%;
+   height:100%;
+   color:#1E90FF;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   background-color: #FFD980;">
+   <h1 style="margin:0">PLEASE ENABLE JAVASCRIPT</h1></div>
+   
+<style>
+   .container{
+      display: none;
+   }
+</style>
+
+</noscript>
+<div class="container">
+   <div  class="row">
+      <nav>
+         <ul id="menu">
+            <li class="Menu-item"><a href="#"><Menu></Menu></a></li>
+            <li class="menu-item hidden"><a href="#">tools</a></li>
+            <li class="menu-item hidden"><a href="#">trading</a></li>
+            <li class="menu-item hidden"><a href="">resources</a></li>
+            <li class="menu-item hidden"><a href="#">transfers</a></li>
+         </ul>
+      </nav>
+      <div class="icons">
+         <i class="fas fa-balance-scale"></i>
+         <i class="fas fa-calculater"></i>
+         <i class="fas fa-percent"></i>
+         <i class="fas fa-chart-line"></i>
+
+      </div>
+      <h1 class="banner">Currency Converter</h1>
+      <div class="column">
+         <form action=" "method="POST">
+            <label for="amount">Amount:
+               <input id="amount" name="amount" type="text" value=" " placeholder="Amount"  required>
+            </label>
+         <label for="rate">From:
+            <select id="rate">
+            <option value="USD">US Dollar(USD)</option>
+            <option value="MXN">Mexican Peso(MXN)</option>
+            <option value="XOF">Beninese CFA(XOF)</option>
+            <option value="CAD">Canadian Dollar(CAD)</option>
+            <option value="HTG">Haitian Gourde(HTG)</option>
+            <option value="XBT">Bitcoin(BTC)</option>
+            <option value="CUP">Cuban Peso(CUP)</option>
+            <option value="GBP">British Pound(GBP)</option>
+           </select>
+         </label>
+      <label for="to">To:
+         <select id="to">
+            
+            <option value="MXN">Mexican Peso(MXN)</option>
+            <option value="USD">US Dollar(USD)</option>
+            <option value="XOF">Beninese CFA(XOF)</option>
+            <option value="CAD">Canadian Dollar(CAD)</option>
+            <option value="HTG">Haitian Gourde(HTG)</option>
+            <option value="XBT">Bitcoin(BTC)</option>
+            <option value="CUP">Cuban Peso(CUP)</option>
+            <option value="GBP">British Pound(GBP)</option>   
+         </select>
+      </label>
+      </form>
+      </div class="hold">
+      <button class="btn" type="button">Calculate</button>
+      <h2 class="amount"><span id="currency"></span><span id="total">
+
+      </span><span id="country"></span>  </h2>
+      <table id="hide">
+         <thead>
+            <tr>
+               <th> </th>
+               <th>30 days</th>
+               <th> 90 days</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>High</td>
+               <td>0.0249</td>
+            <td>0.9826</td>
+            </tr>
+            <tr>
+               <td>Low</td>
+               <td>0.0247</td>
+               <td>0.9824</td>
+            </tr>
+            <tr>
+               <td>Average</td>
+               <td>0.0248</td>
+               <td>0.98245 </td>
+            </tr>
+         </tbody>
+      </table></div>
+   </div>
+   <script src="./home.js"></script>
+   <link href="./home.css" rel="stylesheet">
